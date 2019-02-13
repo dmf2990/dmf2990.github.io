@@ -1,0 +1,53 @@
+
+.container{
+  color: white;
+  font-family: 'Lato', sans-serif;
+
+}
+.title{
+  text-align:center;
+  background-color: black;
+  margin: auto;
+  width: 35%;
+  opacity: .7;
+}
+
+.paragraphs{
+  background-color: white;
+  color:black;
+  width: 50%;
+  opacity: .6;
+  margin:auto;
+  padding: 1em;
+
+}
+
+.parallax { 
+  /* The image used */
+  background-image: url("../images/moutain-fog-image.jpg");
+
+  /* Set a specific height */
+  height: 1092px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin auto;
+}
+.billMurray{
+  width: 50%;
+  text-align: center;
+  margin:auto;
+}
+
+.hyperlinks{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.main{
+  margin-top: 2.5rem;
+}
