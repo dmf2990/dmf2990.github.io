@@ -1,53 +1,156 @@
 
-.container{
-  color: white;
-  font-family: 'Lato', sans-serif;
+*{
+  border-radius: 8px;
+  font-family: 'Lato';
 
 }
-.title{
-  text-align:center;
+html{
   background-color: black;
-  margin: auto;
-  width: 35%;
-  opacity: .7;
 }
 
-.paragraphs{
-  background-color: white;
-  color:black;
-  width: 50%;
-  opacity: .6;
-  margin:auto;
-  padding: 1em;
+.hamburger{
+  display: flex;
+  justify-content: flex-end;
+}
 
+#tech-stack-contents{
+  text-align:center;
+  background-color: #6C6F6F;
+  color: white;
+  opacity: .85;
+  margin: auto;
+  width: 50%;
+  padding: 3em;
+  box-shadow: 2.5px 3px black;
+  
+}
+
+.restParagraphs{
+  background-color: #6C6F6F;
+  color:white;
+  opacity: .85;
+  width: 50%;
+  margin:auto;
+  padding: 3em;
+  box-shadow: 2.5px 3px black;
+  
 }
 
 .parallax { 
   /* The image used */
-  background-image: url("../images/moutain-fog-image.jpg");
+  background-image: url("../images/alt.jpg");
 
   /* Set a specific height */
-  height: 1092px; 
+  height: 150rem; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin auto;
+  margin: auto;
+  border-radius: 0px;
 }
 .billMurray{
   width: 50%;
   text-align: center;
   margin:auto;
+  color: white;
+  font-style: italic;
+
 }
 
-.hyperlinks{
+.hyperlinksBottom{
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
+  background: white;
+  border-radius: 0px; 
+}
+
+.myPic{
+  border-radius: 1000px;
+  box-shadow:  2.5px 3px #888888;
+}
+
+.picPlacement{
+  display: flex;
+  justify-content: center;
+}
+
+.image-army{
+  height: 50px;
+  width: 100px
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.image2-3{
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.image-git{
+  height: 50px;
+  width: 100px;
+  background-color: grey;
+  border-radius: 5px;
+}
+.main{
+  border-radius: 0px;
 
 }
 
-.main{
-  margin-top: 2.5rem;
+.all-text{
+padding-top: 31%;
+}
+
+header{
+  background-color: black;
+  opacity: .9;
+  height: 8rem;
+  width: 100%;
+  border-radius: 0px;
+  color:grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  text-align: center;
+  
+
+}
+
+#jobTitle{
+  font-size: 1rem;
+  display: flex;
+  color:white;
+  font-size: 1.5rem;
+}
+
+#solidSection{
+background-color: black;
+color:black;
+padding-top: 1.4rem;
+padding-bottom: 1.4rem;
+}
+
+#clearSection{
+  padding-bottom: 3rem;
+  padding-top:3rem;
+}
+
+.title{
+  text-align:center;
+  background-color: black;
+  margin: auto;
+  width: 35%;
+  margin-bottom:1.4rem;
+  margin-top: 1.4rem;
+  box-shadow: 2.5px 3px #888888;
+  padding: 10px;
+  color: white; 
+
 }
