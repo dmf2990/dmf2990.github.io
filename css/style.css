@@ -2,87 +2,67 @@
 *{
   border-radius: 8px;
   font-family: 'Lato';
-
 }
-html{
+
+.all-text{
+  padding-top: 33%;
+  }
+
+.billMurray{
+ width: 50%;
+  text-align: center;
+  margin:auto;
+  color: white;
+  font-style: italic; 
+  }
+
+#bottomLinks{
   background-color: black;
+  opacity: .9;
+  box-shadow: none;
+  font-size: 1.3rem;  
 }
 
-.hamburger{
+#clearSection{
+  padding-bottom: 3rem;
+  padding-top:3rem;
+}
+
+.hamburger {
   display: flex;
   justify-content: flex-end;
 }
 
-#tech-stack-contents{
-  text-align:center;
-  background-color: #6C6F6F;
-  color: white;
-  opacity: .85;
-  margin: auto;
-  width: 50%;
-  padding: 3em;
-  box-shadow: 2.5px 3px black;
-  
-}
-
-.restParagraphs{
-  background-color: #6C6F6F;
-  color:white;
-  opacity: .85;
-  width: 50%;
-  margin:auto;
-  padding: 3em;
-  box-shadow: 2.5px 3px black;
-  
-}
-
-.parallax { 
-  /* The image used */
-  background-image: url("../images/alt.jpg");
-
-  /* Set a specific height */
-  height: 150rem; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: auto;
+header{
+  background-color: black;
+  opacity: .9;
+  height: 8rem;
+  width: 100%;
   border-radius: 0px;
-}
-.billMurray{
-  width: 50%;
+  color:grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2.5rem;
   text-align: center;
-  margin:auto;
-  color: white;
-  font-style: italic;
+}
 
+html{
+  background-color: black;
 }
 
 .hyperlinksBottom{
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  background: white;
+  background: black;
   border-radius: 0px; 
 }
-
-.myPic{
-  border-radius: 1000px;
-  box-shadow:  2.5px 3px #888888;
-}
-
-.picPlacement{
-  display: flex;
-  justify-content: center;
-}
-
 .image-army{
   height: 50px;
   width: 100px
-  background-color: grey;
-  border-radius: 5px;
+  background-color grey;
+  border-radius:5px;
 }
 
 .image2-3{
@@ -98,48 +78,81 @@ html{
   background-color: grey;
   border-radius: 5px;
 }
-.main{
-  border-radius: 0px;
-
-}
-
-.all-text{
-padding-top: 31%;
-}
-
-header{
-  background-color: black;
-  opacity: .9;
-  height: 8rem;
-  width: 100%;
-  border-radius: 0px;
-  color:grey;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 2.5rem;
-  text-align: center;
-  
-
-}
 
 #jobTitle{
   font-size: 1rem;
   display: flex;
-  color:white;
+  color:#98ff98;
   font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.main{
+  border-radius: 0px;
+}
+
+.myPic{
+  border-radius: 1000px;
+ box-shadow:  2.5px 3px #888888;
+}
+ 
+.parallax { 
+  /* The image used */
+  background-image: url("../images/alt.jpg");
+  
+  /* Set a specific height */
+  height: 150rem; 
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  border-radius: 0px;
+}
+
+.picPlacement{
+  display: flex;
+  justify-content: center;
+}
+
+.restParagraphs{
+  background-color: #6C6F6F;
+  color:white;
+  opacity: .85;
+  width: 50%;
+  margin:auto;
+  padding: 3em;
+  box-shadow: 2.5px 3px black; 
+}  
+
+.restParagraphs{
+  background-color: #6C6F6F;
+  color:white;
+  opacity: .85;
+  width: 50%;
+  margin:auto;
+  padding: 3em;
+  box-shadow: 2.5px 3px black;
 }
 
 #solidSection{
-background-color: black;
-color:black;
-padding-top: 1.4rem;
-padding-bottom: 1.4rem;
+  background-color: black;
+  color:black;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
 }
 
-#clearSection{
-  padding-bottom: 3rem;
-  padding-top:3rem;
+#tech-stack-contents{
+  text-align:center;
+  background-color: #6C6F6F;
+  color: white;
+  opacity: .85;
+  margin: auto;
+  width: 50%;
+  padding: 3em;
+  box-shadow: 2.5px 3px black;
 }
 
 .title{
@@ -149,8 +162,7 @@ padding-bottom: 1.4rem;
   width: 35%;
   margin-bottom:1.4rem;
   margin-top: 1.4rem;
-  box-shadow: 2.5px 3px #888888;
+  box-shadow: 1px 1.8px #888888;
   padding: 10px;
-  color: white; 
-
+  color: coral; 
 }
