@@ -124,6 +124,7 @@ border-radius: 0px;
 .title{
   text-align: center;
   margin: auto;
+<<<<<<< HEAD:css/style.css
   margin-top: 2rem;
   margin-bottom: 2rem;
   
@@ -136,6 +137,14 @@ border-radius: 0px;
   justify-content: center;
   align-content: center;
   box-shadow: 0 4px 9px -2px #A513A4;
+=======
+  width: 35%;
+  margin-bottom:1.4rem;
+  margin-top: 1.4rem;
+  box-shadow: 1px 1.8px #888888;
+  padding: 10px;
+  color: #98ff98; 
+>>>>>>> 6936d2310afb50200368486a4ce9f605a50bb953:css/cssWaterfall.css
 }
 
 .whoIam{
