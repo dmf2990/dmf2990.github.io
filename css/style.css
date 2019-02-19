@@ -1,107 +1,93 @@
-
 *{
-  border-radius: 8px;
   font-family: 'Lato';
+  border-radius: 8px;
 }
 
-.all-text{
-  padding-top: 33%;
-  }
-
-.billMurray{
- width: 50%;
-  text-align: center;
-  margin:auto;
-  color: white;
-  font-style: italic; 
-  }
-
-#bottomLinks{
-  background-color: black;
-  opacity: .9;
-  box-shadow: none;
-  font-size: 1.3rem;  
+.footer{
+background-color: #000;  
+display:flex;
+justify-content: space-around;
+align-items: center;
+height: 8rem;
+border-radius: 0px;
 }
 
-#clearSection{
-  padding-bottom: 3rem;
-  padding-top:3rem;
+.gridSection{
+  display: grid;
+  grid-gap: 15px 20px;
+  grid-template-columns: 30% 30% 30%;
+  margin: 2rem auto;
+  width: 90% auto;
+  justify-items: center;
+  justify-content: space-between;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
-.hamburger {
-  display: flex;
-  justify-content: flex-end;
-}
-
-header{
-  background-color: black;
-  opacity: .9;
-  height: 8rem;
-  width: 100%;
+.hamburger{
+  background-color: #fff;
+  box-shadow: 0 3px 2px -2px #BF00FF;
   border-radius: 0px;
-  color:grey;
+  align-items: center;     
+}
+
+.header{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-html{
-  background-color: black;
-}
-
-.hyperlinksBottom{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  background: black;
-  border-radius: 0px; 
-}
-.image-army{
-  height: 50px;
-  width: 100px
-  background-color grey;
-  border-radius:5px;
-}
-
-.image2-3{
-  height: 50px;
-  width: 50px;
-  background-color: grey;
-  border-radius: 5px;
-}
-
-.image-git{
-  height: 50px;
-  width: 100px;
-  background-color: grey;
-  border-radius: 5px;
-}
-
-#jobTitle{
-  font-size: 1rem;
-  display: flex;
-  color:#98ff98;
-  font-size: 1.5rem;
-  padding-left: 2rem;
-}
-
-.main{
+  margin-top: 4px;
+      justify-content: space-between;
+      flex-direction: row-reverse;
   border-radius: 0px;
 }
 
-.myPic{
-  border-radius: 1000px;
- box-shadow:  2.5px 3px #888888;
+.heroStatement{
+  text-align: center;
+  width: 50%;
+  margin: auto; 
+  padding: 5rem;
 }
- 
+
+.image-coffee{
+  box-shadow: 0 4px 9px -2px grey;
+}
+
+.letsConnect{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem; 
+}
+
+.me{
+  border-radius: 50px;
+  height: 17.2rem;
+  width: 12.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 9px -2px grey;
+
+}
+
+.movePic{
+  display: flex;
+      justify-content: center;
+}
+
+#name{
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 5px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+}
+
 .parallax { 
   /* The image used */
-  background-image: url("../images/alt.jpg");
+  background-image: url("../images/whitePattern.png");
   
   /* Set a specific height */
-  height: 150rem; 
+  height: 60rem; 
   
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -112,57 +98,54 @@ html{
   border-radius: 0px;
 }
 
-.picPlacement{
-  display: flex;
-  justify-content: center;
+#p2{
+    padding: 1.2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 9px -2px grey;
 }
 
-.restParagraphs{
-  background-color: #6C6F6F;
-  color:white;
-  opacity: .85;
-  width: 50%;
-  margin:auto;
-  padding: 3em;
-  box-shadow: 2.5px 3px black; 
-}  
+#p3{
+  padding: 1.2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 9px -2px grey;
 
-.restParagraphs{
-  background-color: #6C6F6F;
-  color:white;
-  opacity: .85;
-  width: 50%;
-  margin:auto;
-  padding: 3em;
-  box-shadow: 2.5px 3px black;
 }
 
-#solidSection{
-  background-color: black;
-  color:black;
-  padding-top: 1.4rem;
-  padding-bottom: 1.4rem;
+#p4{
+  padding: 1.2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 9px -2px grey;
 }
 
-#tech-stack-contents{
-  text-align:center;
-  background-color: #6C6F6F;
-  color: white;
-  opacity: .85;
-  margin: auto;
-  width: 50%;
-  padding: 3em;
-  box-shadow: 2.5px 3px black;
+#techStack{
+  text-align: center;
 }
 
 .title{
-  text-align:center;
-  background-color: black;
+  text-align: center;
   margin: auto;
-  width: 35%;
-  margin-bottom:1.4rem;
-  margin-top: 1.4rem;
-  box-shadow: 1px 1.8px #888888;
-  padding: 10px;
-  color: coral; 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+  color:#fff;
+  background-color: #000;
+  padding: 1.3rem;
+  width: 38%;
+  
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 4px 9px -2px #A513A4;
 }
+
+.whoIam{
+  text-align: center;
+  width: 1fr;
+  margin: auto; 
+  padding: 5rem;
+  background-color: #BF00FF;
+  color:#fff;  
+  box-shadow: 0 4px 15px -2px #000;
+}
+
+
