@@ -1,134 +1,111 @@
 <!DOCTYPE html>
-<html>
-
-
+<html lang="en">
 <head>
-mb1`
-<section class="hamburger">
+        <section class="hamburger">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <style>
+                    .container {
+                      display: inline-block;
+                      cursor: pointer;
+                    }
+            
+                    .bar1, .bar2, .bar3 {
+                      width: 35px;
+                      height: 5px;
+                      background-color: #000;
+                      margin: 6px 0;
+                      transition: 0.4s;
+                      margin-left: 5px;
+                    }
+            
+                    .change .bar1 {
+                      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                      transform: rotate(-45deg) translate(-9px, 6px);
+                    }
+        
+                    .change .bar2 {opacity: 0;}
+            
+                    .change .bar3 {
+                      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                      transform: rotate(45deg) translate(-8px, -8px);
+                    }
+                   </style>
+                    
+                    
+    <title>Drew Franklin Web Developer</title>
+	<link rel="stylesheet" type="text/css" href="./css/styleAlternate.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
-		.container {
-  		display: inline-block;
-  		cursor: pointer;
-		}
+    </head>
+<!--------------------------------------->
+<body class="parallax">
+ 
+<header class="header">
 
-		.bar1, .bar2, .bar3 {
-  		width: 35px;
-  		height: 5px;
-  		background-color: #ffffff;
-  		margin: 6px 0;
-  		transition: 0.4s;
-		}
+        <a href="http://www.americanspecialops.com/civil-affairs/"><img src="./images/DF.png" id="name"></a>
 
-		.change .bar1 {
-  		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  		transform: rotate(-45deg) translate(-9px, 6px);
-		}
+        <div class="container1" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+        </div>
 
-		.change .bar2 {opacity: 0;}
-
-		.change .bar3 {
-  		-webkit-transform: rotate(45deg) translate(-8px, -8px);
-  		transform: rotate(45deg) translate(-8px, -8px);
-		}
-		
-		</style>
-
-	<title>Drew Franklin</title>
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="shortcut icon" href="./images/fav.ico">
-	<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Lato">
-</head>
-
-
-
-<body>
-<header>
-	<section>
-	<p id="colorName">Drew Franklin</p>
-	<p id="jobTitle">Junior Software Developer</p>
-	</section>
-
-
-<div class="container" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-
-}
-</script>
+         <script>
+                    function myFunction(x) {
+                        x.classList.toggle("change");
+                    }
+        </script>
 </header>
-</section>
+        </section> <!--hamburger section end-->
 
 
+<!--------------------------------------->
+<main>
+    <h3 class= "heroStatement">“Education is the kindling of a flame, not the filling of a vessel.” <br><br>
+        ― Socrates</h3>
+    
+    <div class="movePic">
+        <img src="./images/meProfessional.jpg" class="me">
+    </div>
 
-<div class="parallax">
-	<main class="main">
-		<section class="all-text"
-		<div class="parallax">
-		
-		<div id="solidSection">
-			<figure class="picPlacement">
-			<img src="./images/me.jpg" class="myPic">
-			</figure>
-		
-	
-		
-		<h3 class="billMurray"> “I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games. 26 times, I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life... And that is why I succeed.” </h3></br>
-			<h4 class="billMurray">-Michael Jordan</h4>
-		</div>
+    <h2 class= "whoIam">Hi, I'm Drew! I create full stack web applications, and I love my job!</h2>
+    
+        <h2 class="title">Tech Stack</h2>
+            <p id="techStack">Java • Spring Framework • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile • OOP • AJAX • JSON • Restful APIs • Responsive Design / Mobile • SQL • Relational Databases • Source Control / GitBash </p>
+        
+        <div class="gridSection">
+            <div id="p2">
+                <h2 class="title">Military Service</h2>
+                    <p>From an early age, I knew that I wanted to serve my country, and when that opportunity presented itself, I knew I wanted to go above and beyond the average Soldier. Out of 400 applicants, I was one of 12 selected to undergo the Civil Affairs Medical Training Program (CAMs).</p>
+                    
+                    <p>After nearly a year of rigorous training, I graduated from the CAMs course second in my class, and joined my first 4 man team in January of 2013.  This experience was vital in shaping my adulthood, and it allowed me to understand the strength in combining a strong work ethic with team work, punctuality, and attention to detail.  My military service was a very special time in my life, but unfortuantely cut short by injury.</p>
+            </div>
 
-		
-		<div id="clearSection">
-		<h3 id="TechStack" class="title">Tech Stack</h3>
-			<section class= "paragraphs">	
-				<p id ="tech-stack-contents">Java • Spring Framework • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile • OOP • AJAX • JSON • Restful APIs • Responsive Design / Mobile • SQL • Relational Databases • Source Control / GitBash </p>
-			</section>
-		</div>
+            <div id="p3">
+             <h2 class="title">About Me</h2>
+                <p>I have a great passion for technology as well as a strong interest in physical sciences. I have always been facinated to learn how complex structures work on a foundational level because it gives me the ability to express my creativity. 
+                 As a Full Stack Developer, my foundational coding approach is object-oriented, and uses JUnit testing to create functionally efficient building blocks at the base of all applications. </p>                
 
-		<div id="solidSection">
-		<h3 class="title">The Main Method</h3>
-			<section class= "restParagraphs">
-				<p>I absolutely love technology, and have a strong interest in all of the STEM subjects.  In my free time I enjoy learning new technologies, fitness, traveling, fishing, and spending quality time with family.</p>
-				<p>As a full stack junior software developer, I have an analytical mind set geared towards solving complex technical problems. My foundational coding approach is object-ortiented and combines JUnit testing to create functionally efficient building blocks at the base of all applications.</p>
-				<p>My prior military service has allowed me to understand the strength in combining a strong work ethic with team work, punctuality, and attention to detail.</p>
-			</section>
-		</div>
+                <p>I am also very family focused. In the fall of 2020, I get to Marry my best friend in the whole world, and I consider myself the luckiest man alive to have her by my side. As a long term couple we love many of the same things: fitness, traveling, science, and anything outdoors.  By nature, I am a very social person, and I love to collaborate with others regarding new tech / ideas, so I always welcome coffee to discuss our future collaboration! </p>
+            </div>
 
-		<div id="clearSection">
-		<h3 id="Military Service" class="sub-title, title">Military Service</h3>
-			<section class= "restParagraphs">
-				<p>From an early age, I knew that I wanted to serve my country, and when that opportunity presented itself, I knew I wanted to go above and beyond. Out of 400 applicants, I was one of 12 selected to start the medic training program to become a Civil Affairs operator.</p> 
-
-				<p>This path was long, extremely difficult, and filled with complex issues that needed to be resolved with strict deadlines. After a full year of medical training, I graduated with honors, and joined my first 4 man team in January of 2013.</p> <p>On this team, I learned the necessity of team work as well as the importance of strong attention to detail, and built friendships that will last a lifetime.</p>
-			</section>
-		</div>
-	</main>
-
-<div id="solidSection">
-<footer class="title" id="bottomLinks">
-	<p>Home</p> <!--add a anchor to get to another page for each-->
-	<p>Bio / Interests</p>
-	<p>Current Projects</p>
-	<p>Blog</p>
-</footer>
-</section>
-		<address class="hyperlinksBottom">
-  			<a href="https://github.com/dmf2990"><img src="./images/gith.jpg" class="image-git"></a>
-			<a href="#TechStack"><img src="./images/techStack2.png" class="image2-3"></a>
-			<a href="https://www.linkedin.com/in/dmf2990/"><img src="./images/linked3.png" class="image2-3" alt="LinkedIn"></a>
-			<a href="#Military Service"><img src="./images/Armylogo.png" class="image-army"></a>
-		</address>
-
-</div>
-</div>
+            <div id="p4">
+                <h2 class="title">Current Projects</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure cum modi tempore distinctio? Dolores voluptatum ad accusantium repellat nisi ipsam autem, quidem nostrum facere repellendus nesciunt pariatur error laboriosam? </p>
+            </div>
+        </div>      
+            
+        <h2 class="title">Let's Connect</h2>
+                <div class="letsConnect">
+                    <a href="https://github.com/dmf2990"><img src="./images/grabCoffee.png" class="image-coffee"></a>
+                    <p>Grab Coffee Button (coming soon)</p>
+                 </div>   
+</main> 
+<!--------------------------------------->
+    <footer class="footer">
+        <a href="https://github.com/dmf2990"><img src="./images/gitPurple.png" class="image-git"></a>
+        <a href="https://www.linkedin.com/in/dmf2990/"><img src="./images/linkedPurp.png" class="image2-3" alt="LinkedIn"></a>
+    </footer>
+<!--------------------------------------->
 </body>
-</div>
 </html>
