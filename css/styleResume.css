@@ -1,0 +1,51 @@
+*{
+  font-family: 'Lato';
+}
+
+.centerText{
+  text-align: center;
+}
+
+.entirePage {
+  background-color: #f8f8ff;
+}
+
+.educationFormat{
+  display: flex;
+  justify-content: space-between;
+}
+
+#title{
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    color:#fff;
+    background-color: #000;
+    padding: 1.3rem;
+    width: 38%;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 4px 9px -2px #A513A4;
+  border-radius: 8px;
+}
+
+#largeWidthParagraph{
+    padding: 1.2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 9px -2px grey;
+    border-radius: 8px;
+}
+
+#medWidthParagraph{
+    padding: 1.2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 9px -2px grey;
+    border-radius: 8px;
+    width: 60%;
+  margin: auto;
+    
+}
