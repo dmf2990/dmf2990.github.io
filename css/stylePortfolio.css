@@ -117,6 +117,19 @@ background-color: #000;
     box-shadow: 0 4px 9px -2px grey;
   }
 
+  .projectImage{
+      height: 10rem;
+      width: 10rem;
+        display: flex;
+        justify-content: center;
+  }
+
+  .projectImageMove{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
+  }
+
 #techStack{
     text-align: center;
 }
