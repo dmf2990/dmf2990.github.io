@@ -98,13 +98,13 @@ background-color: #000;
     border-radius: 0px;
   }
 
-  #p2{
+#p2{
       padding: 1.2rem;
       background-color: #fff;
       box-shadow: 0 4px 9px -2px grey;
   }
 
-  #p3{
+#p3{
     padding: 1.2rem;
     background-color: #fff;
     box-shadow: 0 4px 9px -2px grey;
@@ -115,6 +115,19 @@ background-color: #000;
     padding: 1.2rem;
     background-color: #fff;
     box-shadow: 0 4px 9px -2px grey;
+  }
+
+  .projectImage{
+      height: 10rem;
+      width: 10rem;
+        display: flex;
+        justify-content: center;
+  }
+
+  .projectImageMove{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2rem;
   }
 
 #techStack{
