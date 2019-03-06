@@ -7,7 +7,21 @@
 }
 
 .entirePage {
-  background-color: #f8f8ff;
+  
+    /* The image used */
+    background-image: url("../images/whitePattern.png");
+    
+    /* Set a specific height */
+    height: 60rem; 
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-radius: 0px;
+  
 }
 
 .educationFormat{
