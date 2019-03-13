@@ -70,47 +70,74 @@
     </div>
 
     <h2 class= "whoIam">Hi, I'm Drew! I create full stack web applications, and I love my job!</h2>
-    
         <h2 class="title">Tech Stack</h2>
-            <p id="techStack">Java • Spring Framework • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile • OOP • AJAX • JSON • Restful APIs • Responsive Design / Mobile • SQL • Relational Databases • Source Control / GitBash </p>
-        
-        <div class="gridSection">
-            <div id="p2">
-                <h2 class="title">Military Service</h2>
-                    <p>From an early age, I knew that I wanted to serve my country, and when that opportunity presented itself, I knew I wanted to go above and beyond the average Soldier. Out of 400 applicants, I was one of 12 selected to undergo the Civil Affairs Medical Training Program (CAMs).</p>
-                    
-                    <p>After nearly a year of rigorous training, I graduated from the CAMs course second in my class, and joined my first 4 man team in January of 2013.  This experience was vital in shaping my adulthood, and it allowed me to understand the strength in combining a strong work ethic with team work, punctuality, and attention to detail.  My military service was a very special time in my life, but unfortuantely cut short by injury.</p>
-            </div>
-
-            <div id="p3">
-             <h2 class="title">About Me</h2>
-                <p>I have a great passion for technology as well as a strong interest in physical sciences. I have always been facinated to learn how complex structures work on a foundational level because it gives me the ability to express my creativity. 
-                 As a Full Stack Developer, my foundational coding approach is object-oriented, and uses JUnit testing to create functionally efficient building blocks at the base of all applications. </p>                
-
-                <p>I am also very family focused. In the fall of 2020, I get to Marry my best friend in the whole world, and I consider myself the luckiest man alive to have her by my side. As a long term couple we love many of the same things: fitness, traveling, science, and anything outdoors.  By nature, I am a very social person, and I love to collaborate with others regarding new tech / ideas, so I always welcome coffee to discuss our future collaboration! </p>
-            </div>
-
-            <div id="p4">
-                <h2 class="title">Current Projects</h2>
-                <h4 class="sectionTitle">Hospital Mapping Console Project</h4>    
-                    <p>This project is my first pair programming Java console project to solidfy basic foundations of Java OOP. Source control was Git, and Eclipse was used as our IDE. In this project the basic ideas of Polymorphism, TDD, HashMaps, Interfaces, and Abstraction were studied / implemented.</p>
-                        <section class="projectImageMove">
-                            <a href="https://github.com/dmf2990/hospital/tree/dev/src/main/java/hospital"><img src="./images/hospProject.png" class="projectImage"></a>
-                        </section>
-                 <h4 class="sectionTitle">Java Spring MVC Project (in progress)</h4>  
-                     <p>This hobby project is being used to study the Spring MVC model.  Spring allows us to run our own server to have a client View.  This rating site is still in progress, but is helping solidify the use of Spring Framework (MVC), Hypertext Transport Protocol, Mapping Tags, and HTML / ThymeLeaf Dynamically populated pages.</p>
-                        <section class="projectImageMove">
-                            <a href="https://github.com/dmf2990/franklin-review-site/tree/master/src/main/java/org/dmf2990/franklinreviewsite"><img src="./images/reviewPic.png" class="projectImage"></a>
-                        </section>
-
-            </div>
-        </div>      
+          <p id="techStack">Java • Spring Framework • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile • OOP • AJAX • JSON • Restful APIs • Responsive Design / Mobile • SQL • Relational Databases • Source Control / GitBash </p>
+       
+         <div class="gridSectionEntire"><!--grid section start-->
+             <div id="gridSection-AbtMe">
+                <h2 class="title">About Me</h2>
+                  <p>I have a great passion for technology as well as a strong interest in physical sciences. I have always been fascinated to learn how complex structures work on a foundational level because it gives me the ability to express my creativity. 
+                   As a Full Stack Developer, my foundational coding approach is object-oriented, and uses JUnit testing to create functionally efficient building blocks at the base of all applications. </p>                
+  
+                  <p>I am also very family focused. In the fall of 2020, I get to Marry my best friend in the whole world, and I consider myself the luckiest man alive to have her by my side. As a long term couple we love many of the same things: fitness, traveling, science, and anything outdoors.  By nature, I am a very social person, and I love to collaborate with others regarding new tech / ideas, so I always welcome coffee to discuss our future collaboration! </p>
+                    </div>
             
+            <div id="gridSection-MilServ">
+              <h2 class="title">Military Service</h2>
+                <p>From an early age, I knew that I wanted to serve my country, and when that opportunity presented itself, I knew I wanted to go above and beyond the average Soldier. Out of 400 applicants, I was one of 12 selected to undergo the Civil Affairs Medical Training Program (CAMs).</p>
+                <p>After nearly a year of rigorous training, I graduated from the CAMs course second in my class, and joined my first 4 man team in January of 2013.  This experience was vital in shaping my adulthood, and it allowed me to understand the strength in combining a strong work ethic with team work, punctuality, and attention to detail.  My military service was a very special time in my life, but unfortuantely cut short by injury.</p>
+                  </div>
+                  
+                </div> <!--end of grid section-->
+                
+                <h2 class="title">Current Projects</h2>
+                
+        <div class="entireCarousel"><!--start of carousel-->
+            <div class="carousel-Item fade">
+                <div class="numberText">1 / 3</div>
+                <h4 class="sectionTitle">HOSPITAL PROJECT<br></br>Java console / Polymorphism / Interfaces / Abstraction</h4>   
+                <p>This project is my first pair programming Java console project to solidfy basic foundations of Java OOP. Source control was Git, and Eclipse was used as our IDE. In this project the basic ideas of Polymorphism, TDD, HashMaps, Interfaces, and Abstraction were studied / implemented.</p>
+                <section class="projectImageMove">
+                    <a href="https://github.com/dmf2990/hospital/tree/dev/src/main/java/hospital"><img src="./images/hospProject.png" class="projectImage"></a>
+                </section>
+            </div>  
+            
+            <div class="carousel-Item fade">
+                <div class="numberText">2 / 3</div>
+                <h4 class="sectionTitle">FITNESS BLOG SITE<br></br>Java / Spring / MVC / ThymeLeaf / JPA / H2</h4> 
+                <p>This hobby project is being used to study the Spring MVC model.  Spring allows us to run our own server to have a client View.  This rating site is still in progress, but is helping solidify the use of Spring Framework (MVC), Hypertext Transport Protocol, Mapping Tags, and HTML / ThymeLeaf Dynamically populated pages.</p>
+                <section class="projectImageMove">
+                    <a href="https://github.com/dmf2990/franklin-review-site/tree/master/src/main/java/org/dmf2990/franklinreviewsite"><img src="./images/reviewPic.png" class="projectImage"></a>
+                </section>
+            </div> 
+            
+            <div class="carousel-Item fade">
+                <div class="numberText">3 / 3</div>
+                <h4 class="sectionTitle">SOON TO BE<br></br>Java Spring MVC Project</h4> 
+                <p>This hobby project is being used to study the Spring MVC model.  Spring allows us to run our own server to have a client View.  This rating site is still in progress, but is helping solidify the use of Spring Framework (MVC), Hypertext Transport Protocol, Mapping Tags, and HTML / ThymeLeaf Dynamically populated pages.</p>
+                <section class="projectImageMove">
+                    <a href="https://github.com/dmf2990/franklin-review-site/tree/master/src/main/java/org/dmf2990/franklinreviewsite"><img src="./images/reviewPic.png" class="projectImage"></a>
+                </section>
+            </div> 
+            
+            
+                <a class="prev" id="arrows" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" id="arrows" onclick="plusSlides(1)">&#10095;</a>      
+            
+            
+        </div><!--end of carousel-->
+        <br>
+        <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
         <h2 class="title">Let's Connect</h2>
-                <div class="letsConnect">
-                    <a href="https://github.com/dmf2990"><img src="./images/grabCoffee.png" class="image-coffee"></a>
-                    <p>Grab Coffee Button (coming soon)</p>
-                 </div>   
+         <div class="letsConnect">
+           <a href="https://github.com/dmf2990"><img src="./images/grabCoffee.png" class="image-coffee"></a>
+             <p>Grab Coffee Button (coming soon)</p>
+        </div>   
 </main> 
 <!--------------------------------------->
     <footer class="footer">
@@ -118,6 +145,7 @@
         <a href="https://www.linkedin.com/in/dmf2990/"><img src="./images/linkedPurp.png" class="image2-3" alt="LinkedIn"></a>
     </footer>
 <!--------------------------------------->
+<script src="JavaScript/index.js"></script>
 </body>
 </html>
 
