@@ -308,6 +308,7 @@ background-color: #000;
     background-color: rgb(0, 0, 0, .6);
     border-radius: 0;
     white-space: nowrap;
+    
 }
 
 .nav-main ul {
@@ -327,7 +328,7 @@ background-color: #000;
     color: #fff;
 }
 
-.nav-main ul li:hover {
+.nav-main ul li a:hover {
     list-style: none;
     line-height: 60px;
     color: #BF00FF;
@@ -337,7 +338,7 @@ background-color: #000;
     display:block;
     padding: 0 10px;
     text-decoration: none; 
-    color: #BF00FF;
+    color: #fff;
     font-size: 16 px; 
 }
 /*   hamburger css *****************/
