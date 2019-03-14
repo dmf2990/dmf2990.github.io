@@ -24,3 +24,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+//hamburger change
+function myFunction(x) {
+  x.classList.toggle("change");
+}

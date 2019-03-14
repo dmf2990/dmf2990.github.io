@@ -26,7 +26,7 @@
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color .1s ease;
   }
   
   .active {
@@ -35,9 +35,6 @@
 }
 
 .entireCarousel{
-    /* padding: 2.2rem;
-    background-color: #000;
-    box-shadow: 0 4px 9px -2px grey; */
     width: 55%;
     margin: auto;
     position: relative;
@@ -46,9 +43,9 @@
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 4s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2.2s;
   }
 
 .slideshow-container {
@@ -101,17 +98,19 @@
 
 .prev {
     left: -15%;
+    border-radius:8px;
 }  
 
 /* Position the "next button" to the right */
 .next {
         right: -15%;
         border-radius: 3px 0 0 3px;
+        border-radius: 8px;
     }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.6);
     }
 
 /* end of carousel start of alphalbetical order for rest -----------------*/
@@ -124,18 +123,63 @@ background-color: #000;
   border-radius: 0px;
 }
 
-.hamburger{
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+    margin-left: 5px;
+  }
+
+  .bar1:hover, .bar2:hover, .bar3:hover {
+    width: 35px;
+    height: 4px;
+    background-color: #BF00FF;
+    margin: 6px 0;
+    transition: 0.4s;
+    margin-left: 5px;
+  }
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .hamburger {
+      position: fixed;
+  }
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border-radius: 0px;
     background-color: #fff;
     box-shadow: 0 3px 2px -2px #BF00FF;
     border-radius: 0px;
-    align-items: center;     
+    /* position: fixed; */
+    
 }
 
-.header{
+.headerChange {
     display: flex;
-    margin-top: 4px;
-        justify-content: space-between;
-        flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border-radius: 0px;
+    background-color: rgb(0, 0, 0, .6);
+    box-shadow: 0 3px 2px -2px #BF00FF;
     border-radius: 0px;
 }
 
@@ -236,6 +280,81 @@ background-color: #000;
     }
 }
 
+.nav-toggle{
+    background-color: #2bd1fc;
+
+}
+/*today***************************************************************************/
+.buttonToggleAbtMe{
+    width: 70px;
+    height: 70px;
+    background-image: url("../images/alexPersonIcon.png");
+}
+
+.buttonToggleMilServ{
+    width: 70px;
+    height: 70px;
+    background-image: url("../images/alexMilServIcon.png");
+}
+
+#nav-sideBar{
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width: 2.3rem;
+    top: 2.6rem;
+    height: 33.35rem;
+    padding: 0 5px;
+    background-color: rgb(0, 0, 0, .6);
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+.nav-main ul {
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden; /*hides text inside-- can change with javascript ul*/
+}
+
+.nav-main ul li {
+    list-style: none;
+    line-height: 60px;
+    color: #fff;
+}
+
+.nav-main ul li:hover {
+    list-style: none;
+    line-height: 60px;
+    color: #BF00FF;
+}
+
+.nav-main ul li a {
+    display:block;
+    padding: 0 10px;
+    text-decoration: none; 
+    color: #BF00FF;
+    font-size: 16 px; 
+}
+/*   hamburger css *****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .projectImage{
       height: 10rem;
       width: 10rem;
@@ -278,6 +397,7 @@ background-color: #000;
     background-color: #BF00FF;
     color:#fff;  
     box-shadow: 0 4px 15px -2px #000;
+    border-top-left-radius: 0;
 }
 
 

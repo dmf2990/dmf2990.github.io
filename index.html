@@ -1,36 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <section class="hamburger">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <style>
-                    .container {
-                      display: inline-block;
-                      cursor: pointer;
-                    }
-            
-                    .bar1, .bar2, .bar3 {
-                      width: 35px;
-                      height: 5px;
-                      background-color: #000;
-                      margin: 6px 0;
-                      transition: 0.4s;
-                      margin-left: 5px;
-                    }
-            
-                    .change .bar1 {
-                      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-                      transform: rotate(-45deg) translate(-9px, 6px);
-                    }
-        
-                    .change .bar2 {opacity: 0;}
-            
-                    .change .bar3 {
-                      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-                      transform: rotate(45deg) translate(-8px, -8px);
-                    }
-                   </style>
-                    
+                <meta name="viewport" content="width=device-width, initial-scale=1">                    
                     
     <title>Drew Franklin Web Developer</title>
 	<link rel="stylesheet" type="text/css" href="./css/stylePortfolio.css">
@@ -41,25 +12,27 @@
 <body class="parallax">
  
 <header class="header">
-   
         <a href="/resume"><img src="./images/DF.png" id="name"></a>
-
-        <div class="container1" onclick="myFunction(this)">
+    <nav class="nav-main">
+        <section class="hamburger">
+          <div class="container1" onclick="myFunction(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
-        </div>
-
-         <script>
-                    function myFunction(x) {
-                        x.classList.toggle("change");
-                    }
-        </script>
-    
-</header>
+          </div>
         </section> <!--hamburger section end-->
-
-
+        <div class="nav-main" id="nav-sideBar">
+            <ul>
+                <li>RESUME</li>
+                <li>CURRENT PROJECTS</li>
+                <li>GITHUB</li>
+                <li>MILITARY SERVICE</li>
+                <li>LINKEDIN</li>
+                <li>CONTACT INFORMATION</li>
+            </ul>
+        </div>  
+    </header>
+    </nav>       
 <!--------------------------------------->
 <main>
     <h3 class= "heroStatement">“Education is the kindling of a flame, not the filling of a vessel.” <br><br>
@@ -74,20 +47,24 @@
           <p id="techStack">Java • Spring Framework • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • Flexbox • Grid • TDD • Agile • OOP • AJAX • JSON • Restful APIs • Responsive Design / Mobile • SQL • Relational Databases • Source Control / GitBash </p>
        
          <div class="gridSectionEntire"><!--grid section start-->
-             <div id="gridSection-AbtMe">
+            <nav class="nav-toggle">
+              <div id="gridSection-AbtMe">
                 <h2 class="title">About Me</h2>
+                
                   <p>I have a great passion for technology as well as a strong interest in physical sciences. I have always been fascinated to learn how complex structures work on a foundational level because it gives me the ability to express my creativity. 
                    As a Full Stack Developer, my foundational coding approach is object-oriented, and uses JUnit testing to create functionally efficient building blocks at the base of all applications. </p>                
   
                   <p>I am also very family focused. In the fall of 2020, I get to Marry my best friend in the whole world, and I consider myself the luckiest man alive to have her by my side. As a long term couple we love many of the same things: fitness, traveling, science, and anything outdoors.  By nature, I am a very social person, and I love to collaborate with others regarding new tech / ideas, so I always welcome coffee to discuss our future collaboration! </p>
-                    </div>
+               </div>
+            </nav> 
             
-            <div id="gridSection-MilServ">
-              <h2 class="title">Military Service</h2>
-                <p>From an early age, I knew that I wanted to serve my country, and when that opportunity presented itself, I knew I wanted to go above and beyond the average Soldier. Out of 400 applicants, I was one of 12 selected to undergo the Civil Affairs Medical Training Program (CAMs).</p>
-                <p>After nearly a year of rigorous training, I graduated from the CAMs course second in my class, and joined my first 4 man team in January of 2013.  This experience was vital in shaping my adulthood, and it allowed me to understand the strength in combining a strong work ethic with team work, punctuality, and attention to detail.  My military service was a very special time in my life, but unfortunately cut short by injury.</p>
-                  </div>
-                  
+            <nav class="nav-toggle">
+              <div id="gridSection-MilServ">
+               <h2 class="title">Military Service</h2>
+                 <p>From an early age, I knew that I wanted to serve my country, and when that opportunity presented itself, I knew I wanted to go above and beyond the average Soldier. Out of 400 applicants, I was one of 12 selected to undergo the Civil Affairs Medical Training Program (CAMs).</p>
+                 <p>After nearly a year of rigorous training, I graduated from the CAMs course second in my class, and joined my first 4 man team in January of 2013.  This experience was vital in shaping my adulthood, and it allowed me to understand the strength in combining a strong work ethic with team work, punctuality, and attention to detail.  My military service was a very special time in my life, but unfortunately cut short by injury.</p>
+              </div>
+            </nav>
                 </div> <!--end of grid section-->
                 
                 <h2 class="title">Current Projects</h2>
@@ -146,6 +123,7 @@
     </footer>
 <!--------------------------------------->
 <script src="JavaScript/index.js"></script>
+
 </body>
 </html>
 

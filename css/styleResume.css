@@ -52,6 +52,8 @@
     background-color: #fff;
     box-shadow: 0 4px 9px -2px grey;
     border-radius: 8px;
+    width: 80%;
+    margin: auto;
 }
 
 #medWidthParagraph{
