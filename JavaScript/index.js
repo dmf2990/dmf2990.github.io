@@ -65,3 +65,22 @@ function run() {
 }
 
 run();
+
+function toggleHideMainNav(element){
+  element.classList.toggle('hideMainNav');
+}
+
+function linkHamburgerToMainNav(){
+  const hamburger = document.querySelector('.mainNavBtn');
+
+  hamburger.addEventListener('click', function(){
+    const navItems = document.querySelector('.navItems');
+    toggleHideMainNav(navItems);
+  });
+}
+
+function run() {
+  linkHamburgerToMainNav();
+}
+
+run();
