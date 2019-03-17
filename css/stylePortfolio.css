@@ -54,7 +54,7 @@
     margin: auto;
   }
 
-@-webkit-keyframes fade {
+/* @-webkit-keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
   }
@@ -67,7 +67,7 @@
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
-  }
+  } */
 
   /* Number text (1/3 etc) */
 .numbertext {
@@ -297,50 +297,72 @@ background-color: #000;
     background-image: url("../images/alexMilServIcon.png");
 }
 
-#nav-sideBar{
-    position: fixed;
-    left: 0;
-    bottom:0;
-    width: 2.3rem;
-    top: 2.6rem;
-    height: 33.35rem;
-    padding: 0 5px;
-    background-color: rgb(0, 0, 0, .6);
-    border-radius: 0;
-    white-space: nowrap;
-    
-}
-
-.nav-main ul {
-    display:flex;
-    flex-wrap: wrap;
-    padding-left: 15px;
+.navItems { 
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    padding-left: 15px;
     padding-top: 15px;
+    width:20%;
+    top: 1.65rem;
+    height: 32.35rem;
+    background-color: rgb(0, 0, 0, .6);
     overflow: hidden;
-    visibility: hidden; /*hides text inside-- can change with javascript ul*/
+    border-radius: 0;
 }
 
-.nav-main ul li {
+@media screen and (max-width: 600px)  { 
+  .navItems{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;
+    padding-left: 4px;
+    padding-top: 15px;
+    width:22%;
+    top: 1.85rem;
+    height: 35.15rem;
+    background-color: rgb(0, 0, 0, .6);
+    overflow: hidden;
+    border-radius: 0;
+    font-size: 11px;
+  }
+}
+
+.hideMainNav{
+    width: 1.9rem;
+    top: 1.65rem;
+    background-color: rgb(0, 0, 0, .6);
+    pointer-events: none;
+    color: rgb(0, 0, 0, .6);
+    /* display: none; */
+}
+
+@media screen and (max-width: 500px){
+  .hideMainNav{
+  
+    display: none;
+  }
+}
+
+.navItem{
+    list-style: none;
+}
+
+.navItem a{
     list-style: none;
     line-height: 60px;
-    color: #fff;
+    text-decoration: none; 
+    color: white;
 }
 
-.nav-main ul li a:hover {
+.navItem a:hover {
     list-style: none;
     line-height: 60px;
     color: #BF00FF;
 }
 
-.nav-main ul li a {
-    display:block;
-    padding: 0 10px;
-    text-decoration: none; 
-    color: #fff;
-    font-size: 16 px; 
-}
 /*   hamburger css *****************/
 
 
@@ -401,4 +423,13 @@ background-color: #000;
     border-top-left-radius: 0;
 }
 
+.mainNavBtn{
+    padding: 0;
+    margin:0;
+    background: none;
+    border: none;
+    z-index: 1000;
+}
+
+.mainNavBtn:focus{outline:0;}
 

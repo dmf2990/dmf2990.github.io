@@ -32,30 +32,36 @@ function myFunction(x) {
 
 //nav-barMain open and close
 
-let toggleNav = function() {
-  let toggleNavStatus = false;
+// var clicked = false;
+// function toggle(){
+// let getSideBarWidth = document.getElementById("#nav-sideBar"); //document = act on an element  querySelector = grab something
+// let getSideBarUl = document.getElementsByClassName(".nav-main ul"); 
+//   if (!clicked){
+//     clicked = true;
+//     getSideBarUl.style.visibility = "visible";
+//     getSideBarWidth.style.width = "273px";
+//   }else{
+//     clicked = false;
+//     getSideBarUl.style.visibility = "hidden";
+//     getSideBarWidth.style.width = "37px";
+//   }
+// }
 
-  let getSideBar = document.querySelector("#nav-sideBar"); //document = act on an element  querySelector = grab something
-  let getSideBarUl = document.querySelector(".nav-main ul"); 
-
-  if (!toggleNavStatus) {
-    getSideBarUl.style.visibility = "visible";
-    getSideBar.style.width = "273px";
-
-    let arrayLength = getSideBarAnchors.length;
-    for (let i=0; i < array.length; i++) {
-      getSideBarAnchors[i].style.opacity = "1";   //grab i which is zero - so i = 0, first time loop grab first index, next loop grab next link / index.. so on then style them
-    }
-    toggleNavStatus = true;
-  } else {
-    getSideBarUl.style.visibility = "hidden";
-    getSideBar.style.width = "36px";
-    
-    let arrayLength = getSideBarAnchors.length;
-    for (let i=0; i < array.length; i++) {
-      getSideBarAnchors[i].style.opacity = "1";   //grab i which is zero - so i = 0, first time loop grab first index, next loop grab next link / index.. so on then style them
-    }
-
-  }
-
+function toggleHideMainNav(element){
+  element.classList.toggle('hideMainNav');
 }
+
+function linkHamburgerToMainNav(){
+  const hamburger = document.querySelector('.mainNavBtn');
+
+  hamburger.addEventListener('click', function(){
+    const navItems = document.querySelector('.navItems');
+    toggleHideMainNav(navItems);
+  });
+}
+
+function run() {
+  linkHamburgerToMainNav();
+}
+
+run();

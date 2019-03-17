@@ -13,24 +13,25 @@
  
 <header class="header">
         <a href="/resume"><img src="./images/DF.png" id="name"></a>
-    <nav class="nav-main">
+    
+    <nav> <!--start of main nav  mgiht not be usijng class here-->
         <section class="hamburger">
-          <div class="container1" onclick="myFunction(this); toggleNav();">
+          <button class="mainNavBtn">
+            <div onclick="myFunction(this);">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
-                    <div class="bar3"></div>
-          </div>
+                    <div class="bar3"></div>         
+            </div>
+          </button>
         </section> <!--hamburger section end-->
-        <aside class="nav-main" id="nav-sideBar">
-            <ul>
-                <li><a href="/resume">RESUME</a></li>
-                <li><a href="#">GITHUB</a></li>
-                <li><a href="#">CURRENT PROJECTS</a></li>
-                <li><a href="#">MILITARY SERVICE</a></li>
-                <li><a href="#">LINKEDIN</a></li>
-                <li><a href="#">CONTACT INFORMATION</a></li>
-            </ul>
-        </aside>  
+            <ul class="navItems hideMainNav">
+                <li class="navItem"><a href="/resume">RESUME</a></li>
+                <li class="navItem"><a href="https://github.com/dmf2990">GITHUB</a></li>
+                <li class="navItem"><a href="#">CURRENT PROJECTS</a></li>
+                <li class="navItem"><a href="#bottom">MILITARY SERVICE</a></li>
+                <li class="navItem"><a href="https://www.linkedin.com/in/dmf2990/">LINKED IN</a></li>
+                <li class="navItem"><a href="#">CONTACT INFORMATION</a></li>
+            </ul> 
     </header>
     </nav>   <!--end of nav bar-->    
 <!--------------------------------------->
@@ -50,7 +51,7 @@
             <nav class="nav-toggle">
               <div id="gridSection-AbtMe">
                 <h2 class="title">About Me</h2>
-                
+                  <button class="hideMaterial">See Details</button>
                   <p>I have a great passion for technology as well as a strong interest in physical sciences. I have always been fascinated to learn how complex structures work on a foundational level because it gives me the ability to express my creativity. 
                    As a Full Stack Developer, my foundational coding approach is object-oriented, and uses JUnit testing to create functionally efficient building blocks at the base of all applications. </p>                
   
@@ -60,7 +61,8 @@
             
             <nav class="nav-toggle">
               <div id="gridSection-MilServ">
-               <h2 class="title">Military Service</h2>
+                <h2 class="title">Military Service</h2>
+                  <button class="hideMaterial">See Details</button>
                  <p>From an early age, I knew that I wanted to serve my country, and when that opportunity presented itself, I knew I wanted to go above and beyond the average Soldier. Out of 400 applicants, I was one of 12 selected to undergo the Civil Affairs Medical Training Program (CAMs).</p>
                  <p>After nearly a year of rigorous training, I graduated from the CAMs course second in my class, and joined my first 4 man team in January of 2013.  This experience was vital in shaping my adulthood, and it allowed me to understand the strength in combining a strong work ethic with team work, punctuality, and attention to detail.  My military service was a very special time in my life, but unfortunately cut short by injury.</p>
               </div>
