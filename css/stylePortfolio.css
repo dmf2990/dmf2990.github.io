@@ -3,6 +3,10 @@
     border-radius: 8px;
 }
 
+body{
+background-color: rgba(0,0,0,0.3);
+}
+
 /*  start of carousel -------------------------------*/ 
 /**********************************************/
 .dot:hover {
@@ -61,7 +65,7 @@
     margin: auto;
   }
 
-/* @-webkit-keyframes fade {
+ @-webkit-keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
   }
@@ -240,23 +244,24 @@ background-color: #000;
     background-image: url("../images/whitePattern.png");
     
     /* Set a specific height */
-    height: 60rem; 
+    height: 100%; 
     
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
+    margin-top: 0%;
     border-radius: 0px;
+    max-width: 1200px;
+    box-shadow: 0 4px 9px -2px black;
+    ;
 }
 
 .gridSectionEntire{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: normal;
     margin: 4rem auto;
-    width: 100%;
+    width: 90%;
     justify-items: center;
     justify-content: space-around;
 
@@ -264,10 +269,17 @@ background-color: #000;
   
 #gridSection-AbtMe {
     float: left;
+    width: 47%;
+ }
+
+ #gridSection-MilServ{
+    width: 47%;
  }
 
 #gridSection-MilServ, #gridSection-AbtMe {
-    padding: 10%;
+    padding: 18%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     background-color: #fff;
     box-shadow: 0 4px 9px -2px grey;
  }
@@ -281,6 +293,9 @@ background-color: #000;
         width: 70%;
         margin-top: 4rem;
     }
+    #gridSection-MilServ{
+        margin-top: 5rem;
+     }
 }
 
 .nav-toggle{
@@ -337,7 +352,7 @@ background-color: #000;
 .hideMainNav{
     /* width: 1.7rem;
     top: 1.65rem;
-    background-color: rgb(0, 0, 0, .6);
+    background-color: rgb(0, 0, 0, .6) !important;
     pointer-events: none;
     color: rgb(0, 0, 0, .6); */
     display: none;
@@ -370,8 +385,8 @@ background-color: #000;
 /*   hamburger css *****************/
 
 .projectImage{
-      height: 10rem;
-      width: 10rem;
+      height: 13rem;
+      width: 13rem;
       display: flex;
       justify-content: center;
   }
@@ -390,13 +405,32 @@ background-color: #000;
 .title, .sectionTitle{
     text-align: center;
     margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    
     
     color:#fff;
     background-color: #000;
     padding: 1.3rem;
-    width: 45%;
+    width: 30%;
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 4px 9px -2px #A513A4;
+}
+
+.titleGrid{
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    
+    
+    color:#fff;
+    background-color: #000;
+    padding: 1.3rem;
+    width: 80%;
     
     display: flex;
     justify-content: center;
@@ -438,3 +472,4 @@ display: none;
 }
 
 #icon:focus{outline:0}
+
